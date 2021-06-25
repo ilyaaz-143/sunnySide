@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+  }
+  .attribution {
+      
+       font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 85vh;
+    position: relative;
+    background-image: url("images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  header h2{
+    z-index: 2;
+    color: white;
+  }
+  nav{
+    width: 50%;
+    z-index: 2;
+    text-align: center;
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  ul li{
+    list-style: none;
+  }
+a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    transition: 300ms ease;
+  }
+  button:hover{
+    background-color: rgba(255, 255, 255, .10);  
+backdrop-filter: blur(5px);
+color: white;
+  }
+ .creative{
+   z-index: 2;
+   position: absolute;
+   color: white;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 20%;
+   font-size: 50px;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+ }
+ .burger{
+   display: none;
+ }
+ .navigation{
+   position: absolute;
+   background-color: white;
+   width: 80%;
+   text-align: center;
+   padding: 20px;
+   color: black;
+   top: 15%;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 5;
+   font-size: 20px;
+   visibility: hidden;
+ }
+ .triangle{
+  position: absolute;
+  top: 12%;
+  width: 0;
+  height: 0;
+  right: 10%;
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+  visibility: hidden;
+ }
+ .showtriangle{
+  position: absolute;
+  top: 12%;
+  width: 0;
+  height: 0;
+  right: 10%;
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+  visibility: visible;
+ }
+ .show{
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-size: 20px;
+   visibility: visible;
+ }
+ 
+ .show button{
+  background-color: hsl(51, 100%, 49%);
+}
+ .show ul li{
+  padding: 15px 10px;
+ }
+ .show ul li a{color: black;}
+ .mobile{
+   display: none;
+ }
+ .arrow{
+  z-index: 2;
+   position: absolute;
+   color: white;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 40%; 
+ }
+ section{
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(3,1fr);
+   
+ }
+ .div-text{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+ }
+ .div-text div{
+   width: 50%;
+ }
+ .div-text div h2{
+   font-size: 36px;
+   font-family: 'Fraunces', serif;
+ }
+ .div-text div p{
+  margin: 20px 0px;
+ }
+ .div-text div span{position: relative; font-family: 'Fraunces', serif;}
+ .div-text div span::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px;
+  background-color: hsl(51, 100%, 49%);
+ }
+ .imgintext{
+   position: relative;
+ }
+ .imgintext div{
+   position: absolute;
+   bottom: 30%;
+   font-family: 'Fraunces', serif;
+   width: 50%;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+ }
+ .imgintext div h2{font-size: 36px;
+   font-family: 'Fraunces', serif;}
+   .customers{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       padding: 50px;
+   }
+   #text{
+       text-align: center;
+       margin: 50px 0px;
+       font-size: 32px;
+       text-transform: uppercase;
+       letter-spacing: 10px;
+       color: #A9A9AB;
+   }
+   .customers div{
+       align-items: center;
+       text-align: center;
+   }
+   .customers div img{
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       margin-bottom: 30px;
+   }
+   
+   .customers div .info{
+    margin-bottom: 30px;
+   }
+   .images{
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       overflow-x: hidden;
+   }
+   .images div img{
+       width: 100%;
+       height: 100%;
+   }
+   footer{
+       width: 100%;
+       height: 300px;
+       background-color: #90D4C5;
+       color: hsl(168, 34%, 41%);
+       align-items: center;
+       text-align: center;
+       display: flex;
+       justify-content: space-around;
+       flex-direction: column;
+   }
+   footer div{
+       display: flex;
+
+   }
+   footer div p{
+       margin-left: 20px;
+   }
+   footer div svg{
+    margin-left: 20px;
+}
+
+@media screen and ( max-width:768px ) {
+  *{
+    overflow-x: hidden;
+  }
+  .imgintext div{
+    bottom: 6%;
+  }
+  .div-text div{
+    width: 80%;
+  }
+}
+
+@media screen and ( max-width:546px ) {
+  nav{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  section{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(1,1fr);
+  }
+  .img1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .imgintext div{
+    width: 60%;
+  }
+  #text{
+    font-size: 26px;
+    padding: 0px 20px;
+  }
+  .div-text div {
+    width: 60%;
+  }
+  .div-text div p{
+    margin: 10px 0px;
+   }
+   .customers{
+     flex-direction: column;
+   }
+   .customers div{margin-bottom: 30px;}
+   .creative{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  .arrow{
+   z-index: 2;
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 39%; 
+  }
+  .images{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+  }
+  .images div{
+    overflow: hidden;
+  }
+  .images div .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+}
